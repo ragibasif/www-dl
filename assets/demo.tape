@@ -55,7 +55,7 @@
 #   Hide                            Hide the subsequent commands from the output
 #   Show                            Show the subsequent commands in the output
 
-Output assets/build.gif
+Output assets/demo.gif
 
 Set Shell zsh
 Set FontSize 32
@@ -63,10 +63,13 @@ Set FontFamily "Fira Code"
 Set Width 1200
 Set Height 600
 Set BorderRadius 10
-Set Theme "Rose Pine"
 
-Type "go build main.go" Sleep 100ms Enter Sleep 500ms
-Type "./main https://go.dev/" Sleep 100ms Enter Sleep 500ms
-Type "open index.html" Sleep 100ms Enter
+Type "go build main.go" Sleep 100ms Enter Sleep 1s
+Type "./main https://httpbin.org/" Sleep 100ms Enter Sleep 1s
+Type "cd www-downloads/" Sleep 100ms Enter Sleep 100ms
+Type "tree" Sleep 100ms Enter Sleep 100ms
+Type "cd .." Sleep 100ms Enter Sleep 100ms
+Type "open www-downloads/www.httpbin.org/index.html" Sleep 100ms Enter
 
 Sleep 2s
+

@@ -1,5 +1,7 @@
 # www-dl
 
+![](./assets/demo.gif)
+
 To build:
 
 ```bash
@@ -19,15 +21,9 @@ go build main.go
 ./main https://go.dev/
 ```
 
-![](./assets/build.gif)
-
 ## Issues
 
-```bash
-./main https://go.dev/
-```
-
-Returns: Response Status 200 OK
+> [!update] This seems to be a HTTP header issue. Will fix soon!
 
 ```bash
 ./main https://stackoverflow.com/questions/34530237/find-files-in-a-directory-containing-desired-string-in-python
