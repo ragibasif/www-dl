@@ -102,6 +102,12 @@ func makeParsedUrlList(url_list []string) []*url.URL {
 	return s
 }
 
+// TODO: HTTP Header
+// TODO: https://developer.mozilla.org/en-US/docs/Glossary/Request_header
+// TODO: https://stackoverflow.com/questions/46021330/how-can-i-read-a-header-from-an-http-request-in-golang
+// TODO: https://siongui.github.io/2018/03/06/go-print-http-response-header/
+// TODO: https://pkg.go.dev/net/http?utm_source=godoc#Header
+
 func main() {
 
 	createDir(mainDir)
